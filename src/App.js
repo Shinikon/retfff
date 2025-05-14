@@ -7,6 +7,8 @@ import Footer from "./components/Footer";
 import Main from "./pages/Main";
 import Blog from "./pages/Blog";
 import AboutUs from "./pages/AboutUs";
+
+import './scss/app.scss'
 function App() {
   return (
     <div className="App">
