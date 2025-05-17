@@ -1,13 +1,30 @@
-import React from 'react'
-import Banner from '../components/Banner'
+import React from "react";
+import Banner from "../components/Banner";
+import FilmList from "../components/FilmList";
+import Sign from "../components/Sign";
 
- function Main() {
+import "../scss/app.scss";
+
+function Main() {
   return (
-    <div>Main
+    <div>
       <Banner />
-    </div>
-  )
-}
+      <div className="films">
+        <h3 className="title">Popular on Retflix</h3>
+        <FilmList />
+        <h3 className="title">Popular on Retflix</h3>
+        <FilmList />
+        <h3 className="title">Popular on Retflix</h3>
+        <FilmList />
+        <h3 className="title">Popular on Retflix</h3>
+        <FilmList />
+      </div>
 
+      <hr className="hr-main" />
+
+      <Sign />
+    </div>
+  );
+}
 
 export default Main;

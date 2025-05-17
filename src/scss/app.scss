@@ -32,3 +32,33 @@ h3 {
 p {
   font-size: 16px;
 }
+
+.App {
+  overflow: hidden;
+}
+
+.films {
+  margin-right: 60px;
+  margin-left: 60px;
+  // margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  // h3 {
+  //   text-transform: uppercase;
+  //   color: rgb(255, 255, 255, 0.7);
+  // }
+}
+
+.title {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.hr-main {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1320px;
+  border-bottom: 2px solid #ca529a;
+}

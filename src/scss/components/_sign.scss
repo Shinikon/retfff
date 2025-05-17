@@ -1,0 +1,57 @@
+.sign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__top {
+    display: flex;
+
+    &_btns {
+      margin-left: 36px;
+      button {
+        width: 119px;
+        height: 50px;
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: 43px;
+    width: 982px;
+    h3 {
+      color: rgb(255, 255, 255, 0.7);
+    }
+    &_sub {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: end;
+      margin-right: 72px;
+      gap: 99px;
+    }
+
+    &_row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      height: 44px;
+      background-color: #1f1f1f;
+
+      padding-right: 80px;
+      padding-left: 20px;
+
+      div {
+        display: flex;
+        gap: 94px;
+      }
+    }
+  }
+}
+.even-row {
+  background-color: #1f1f1f;
+}
+
+.odd-row {
+  background-color: #000000;
+}
