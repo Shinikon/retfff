@@ -20,6 +20,9 @@ function Sign() {
           <button>
             <h3>Sign In</h3>
           </button>
+          <h3>
+            OR
+          </h3>
           <button>
             <h3>Sign Up</h3>
           </button>

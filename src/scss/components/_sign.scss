@@ -1,16 +1,23 @@
 .sign {
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   &__top {
     display: flex;
+    align-items: center;
 
     &_btns {
       margin-left: 36px;
+      gap: 20px;
+      display: flex;
+      align-items: center;
       button {
         width: 119px;
         height: 50px;
+        background-color: #ca529a;
+        text-transform: uppercase;
       }
     }
   }
@@ -28,6 +35,7 @@
       justify-content: end;
       margin-right: 72px;
       gap: 99px;
+      margin-bottom: 20px;
     }
 
     &_row {

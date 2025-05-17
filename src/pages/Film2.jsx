@@ -1,13 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Banner from "../components/Banner";
-import FilmList from "../components/FilmList";
-import Review from "../components/Review";
 
-function Film() {
+import { Link } from "react-router-dom";
+
+import film from "../assets/img/film.svg";
+import arrow from "../assets/img/arrow.svg";
+
+import FilmList from "../components/FilmList";
+
+function Film2() {
   return (
-    <div className="film">
-      <Banner />
+    <div className="film2">
+      <div className="film2__watch">
+        <img src={film} alt="" />
+      </div>
 
       <div className="film__desc">
         <h3>PLOT</h3>
@@ -36,15 +41,18 @@ function Film() {
         <FilmList />
       </div>
 
-      <div className="film__reviews">
-        <div className="film__reviews_top">
-          <h3>Users Reviews</h3>
-          <h3>View All</h3>
-        </div>
-        <Review />
-      </div>
+      <Link to="/">
+        <button>
+          <div className="film2__back">
+            {/* <div> */}
+            <img src={arrow} alt="" />
+            {/* </div> */}
+            <h3>Go Back</h3>
+          </div>
+        </button>
+      </Link>
     </div>
   );
 }
 
-export default Film;
+export default Film2;

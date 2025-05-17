@@ -12,11 +12,11 @@ function Main() {
       <div className="films">
         <h3 className="title">Popular on Retflix</h3>
         <FilmList />
-        <h3 className="title">Popular on Retflix</h3>
+        <h3 className="title">Watch now</h3>
         <FilmList />
-        <h3 className="title">Popular on Retflix</h3>
+        <h3 className="title">drama</h3>
         <FilmList />
-        <h3 className="title">Popular on Retflix</h3>
+        <h3 className="title">horror</h3>
         <FilmList />
       </div>
 
