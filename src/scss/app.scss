@@ -154,15 +154,23 @@ p {
     margin-top: 38px;
     margin-left: 60px;
     padding-left: 30px;
-    // padding-right: 30px;
 
     h3 {
       font-weight: normal;
     }
 
     &_sort {
-      margin-left: 821px;
+      margin-left: 20px; // Изменено для более компактного вида
       display: flex;
+      align-items: center;
+
+      select {
+        background-color: #333; // Цвет фона для выпадающего списка
+        color: #fff; // Цвет текста
+        border: none; // Убираем рамку
+        padding: 5px; // Добавляем отступы
+        margin-right: 5px; // Отступ между селектом и иконкой
+      }
 
       img {
         padding-left: 5px;
@@ -172,8 +180,10 @@ p {
         padding-left: 20px;
       }
     }
+
     &_lupa {
       margin-left: 36px;
     }
   }
 }
+
