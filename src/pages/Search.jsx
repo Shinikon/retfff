@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 import FilmDesc from "../components/FilmDesc";
 
@@ -6,22 +6,132 @@ import search from "../assets/img/search.svg";
 import down from "../assets/img/down.svg";
 
 function Search() {
+  const [openAuthor, setOpenAuthor] = useState(false);
+  const [openGenre, setOpenGenre] = useState(false);
+  const [openActor, setOpenActor] = useState(false);
+  const [searchText, setSearchText] = useState("");
+
+  const authorRef = useRef(null);
+  const genreRef = useRef(null);
+  const actorRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (authorRef.current && !authorRef.current.contains(event.target)) {
+        setOpenAuthor(false);
+      }
+      if (genreRef.current && !genreRef.current.contains(event.target)) {
+        setOpenGenre(false);
+      }
+      if (actorRef.current && !actorRef.current.contains(event.target)) {
+        setOpenActor(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [authorRef, genreRef, actorRef]);
+
+  const handleAuthorClick = () => {
+    setOpenAuthor(!openAuthor);
+    setOpenGenre(false);
+    setOpenActor(false);
+  };
+
+  const handleGenreClick = () => {
+    setOpenGenre(!openGenre);
+    setOpenAuthor(false);
+    setOpenActor(false);
+  };
+
+  const handleActorClick = () => {
+    setOpenActor(!openActor);
+    setOpenAuthor(false);
+    setOpenGenre(false);
+  };
+
+  const handleSearchInputChange = (event) => {
+    setSearchText(event.target.value);
+  };
+
   return (
     <div className="search">
       <div className="search__bar">
-        <h3>SEARCH...</h3>
+        <input
+          type="text"
+          placeholder="SEARCH..."
+          value={searchText}
+          onChange={handleSearchInputChange}
+          className="search__input"
+        />
 
         <div className="search__bar_sort">
-          <p>Author</p>
+          <div className="popup-wrapper">
+            <div
+              onClick={handleAuthorClick}
+              className={`popup ${openAuthor ? "active" : ""}`}
+            >
+              <p>Author</p>
+            </div>
+            {openAuthor && (
+              <div className="popup__open" ref={authorRef}>
+                <ul>
+                  <li>Author</li>
+                  <li>Author</li>
+                  <li>Author</li>
+                  <li>Author</li>
+                  <li>Author</li>
+                </ul>
+              </div>
+            )}
+          </div>
           <div>
             <img src={down} alt="" />
           </div>
-          <p>Category</p>
+          <div className="popup-wrapper">
+            <div
+              onClick={handleGenreClick}
+              className={`popup ${openGenre ? "active" : ""}`}
+            >
+              <p>Genre</p>
+            </div>
+            {openGenre && (
+              <div className="popup__open" ref={genreRef}>
+                <ul>
+                  <li>Genre</li>
+                  <li>Genre</li>
+                  <li>Genre</li>
+                  <li>Genre</li>
+                  <li>Genre</li>
+                </ul>
+              </div>
+            )}
+          </div>
           <div>
             <img src={down} alt="" />
           </div>
 
-          <p>Actor</p>
+          <div className="popup-wrapper">
+            <div
+              onClick={handleActorClick}
+              className={`popup ${openActor ? "active" : ""}`}
+            >
+              <p>Actor</p>
+            </div>
+            {openActor && (
+              <div className="popup__open" ref={actorRef}>
+                <ul>
+                  <li>Actor</li>
+                  <li>Actor</li>
+                  <li>Actor</li>
+                  <li>Actor</li>
+                  <li>Actor</li>
+                </ul>
+              </div>
+            )}
+          </div>
           <div>
             <img src={down} alt="" />
           </div>
@@ -38,24 +148,3 @@ function Search() {
 }
 
 export default Search;
-
-/* const [open, setOpen] = React.useState(false); */
-/* 
-<div
-            onClick={() => setOpen(!open)}
-            className={`popup ${open ? "active" : ""}`}
-          >
-            <h3>Select size</h3>
-            <img src={size} alt="Select Size" />
-          </div>
-          {open && (
-            <div className="size-options">
-              <ul>
-                <li>XS</li>
-                <li>S</li>
-                <li>M</li>
-                <li>L</li>
-                <li>XL</li>
-              </ul>
-            </div>
-          )} */
