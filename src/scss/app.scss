@@ -13,6 +13,7 @@ h2,
 h3,
 p,
 li,
+ul,
 a,
 h4 {
   font-family: "Montserrat", sans-serif;
@@ -243,15 +244,57 @@ li {
 }
 
 .about {
+  margin-top: 24px;
   &__banner {
+    margin-left: 60px;
+    margin-right: 60px;
     width: 1320px;
     height: 253px;
-    padding: 29px 25px;
-    h4 {
+    // align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      padding: 25px 29px;
       font-weight: normal;
-      font-variant-caps: petite-caps;
+      text-transform: uppercase;
+      line-height: 50px;
+      letter-spacing: normal;
+      // width: auto;
+      // width: 1270px;
+      // padding: auto;
     }
     border: 3px solid #ca529a;
     border-radius: 30px;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    gap: 40px;
+    h3 {
+      font-weight: normal;
+    }
+
+    &_text {
+      width: 723px;
+      height: 562px;
+
+      li,
+      ul {
+        font-size: 20px;
+      }
+
+      ul {
+        margin-top: 10px;
+      }
+
+      li {
+        margin-left: 35px;
+      }
+    }
   }
 }
