@@ -25,7 +25,9 @@ function Header() {
       </div>
 
       <div className="header__user">
-        <img src={user} alt="" />
+        <Link to="/user">
+          <img src={user} alt="" />
+        </Link>
       </div>
     </div>
   );

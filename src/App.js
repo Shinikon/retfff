@@ -10,6 +10,7 @@ import AboutUs from "./pages/AboutUs";
 import Film from "./pages/Film";
 import Film2 from "./pages/Film2";
 import Search from "./pages/Search";
+import User from "./pages/User";
 
 import "./scss/app.scss";
 
@@ -25,6 +26,7 @@ function App() {
           <Route path={"/blog"} element={<Blog />} />
           <Route path={"/film"} element={<Film />} />
           <Route path={"/film2"} element={<Film2 />} />
+          <Route path={"/user"} element={<User />} />
         </Route>
       </Routes>
 

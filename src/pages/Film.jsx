@@ -7,7 +7,9 @@ import Review from "../components/Review";
 function Film() {
   return (
     <div className="film">
-      <Banner />
+      <Link to="/film2">
+        <Banner />
+      </Link>
 
       <div className="film__desc">
         <h3>PLOT</h3>

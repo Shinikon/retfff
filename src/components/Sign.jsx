@@ -1,6 +1,11 @@
 import React from "react";
 import "../scss/components/_sign.scss";
 
+import ModalTrigger from "../components/ModalTrigger";
+
+import signIn from "../assets/img/signIn.svg";
+import signUp from "../assets/img/signUp.svg";
+
 const plans = [
   { priceEndDate: "xx/xx/xx", basicPrice: "EUR7.99", premiumPrice: "EUR11.99" },
   { priceEndDate: "xx/xx/xx", basicPrice: "EUR7.99", premiumPrice: "EUR11.99" },
@@ -17,15 +22,36 @@ function Sign() {
       <div className="sign__top">
         <h3>Choose one plan and watch everything on retflix</h3>
         <div className="sign__top_btns">
-          <button>
-            <h3>Sign In</h3>
-          </button>
-          <h3>
-            OR
-          </h3>
-          <button>
-            <h3>Sign Up</h3>
-          </button>
+          <ModalTrigger
+            children={
+              <button>
+                <h3>Sign In</h3>
+              </button>
+            }
+            modalContent={
+              <div className="modal-content-wrapper">
+                <div className="modal-text-content">
+                  <img src={signIn} alt="Архитектура" />
+                </div>
+              </div>
+            }
+          />
+
+          <h3>OR</h3>
+          <ModalTrigger
+            children={
+              <button>
+                <h3>Sign In</h3>
+              </button>
+            }
+            modalContent={
+              <div className="modal-content-wrapper">
+                <div className="modal-text-content">
+                  <img src={signUp} alt="Архитектура" />
+                </div>
+              </div>
+            }
+          />
         </div>
       </div>
 

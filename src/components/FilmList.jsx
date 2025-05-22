@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "../scss/components/_filmList.scss";
 
@@ -10,10 +11,18 @@ import witcher from "../assets/img/witcher.svg";
 function FilmList() {
   return (
     <div className="list">
-      <img src={squidGame} alt="squidGame" />
-      <img src={euphoria} alt="euphoria" />
-      <img src={arcane} alt="arcane" />
-      <img src={witcher} alt="witcher" />
+      <Link to="/film">
+        <img src={squidGame} alt="squidGame" />
+      </Link>
+      <Link to="/film">
+        <img src={euphoria} alt="euphoria" />
+      </Link>
+      <Link to="/film">
+        <img src={arcane} alt="arcane" />
+      </Link>
+      <Link to="/film">
+        <img src={witcher} alt="witcher" />
+      </Link>
     </div>
   );
 }
