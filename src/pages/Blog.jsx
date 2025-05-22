@@ -1,10 +1,15 @@
-import React from 'react'
+import React from "react";
 
- function Blog() {
+import News from "../components/News";
+
+function Blog() {
   return (
-    <div>Blog</div>
-  )
+    <div className="blog">
+      <div className="blog__small">
+        <News />
+      </div>
+    </div>
+  );
 }
-
 
 export default Blog;
