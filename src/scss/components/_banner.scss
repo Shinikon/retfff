@@ -4,6 +4,7 @@
   height: 779px;
   color: white;
   padding-left: 60px;
+
   // display: flex;
 
   &__title {
@@ -11,6 +12,7 @@
     width: 359px;
     height: 122px;
     font-weight: bold;
+    text-decoration: none;
   }
   &__bottom {
     padding-top: 142px;
@@ -35,6 +37,7 @@
 
         h3 {
           font-weight: normal;
+          text-decoration: none;
         }
 
         cursor: pointer;

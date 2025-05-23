@@ -12,7 +12,7 @@ import news9 from "../assets/img/news9.jpg";
 
 import "../scss/components/_news.scss";
 
-const films = [
+const news = [
   {
     // desc
     text: "'Flight Out': 'Fast Bullets' and 'John Wick' on the same plane",
@@ -63,15 +63,15 @@ const films = [
 function News() {
   return (
     <div className="news">
-      {films.map((film, index) => (
+      {news.map((neww, index) => (
         <div
           key={index}
           className="news__block"
           style={{
-            backgroundImage: `url(${film.img})`,
+            backgroundImage: `url(${neww.img})`,
           }}
         >
-          <h3>{film.text}</h3>
+          <h3>{neww.text}</h3>
         </div>
       ))}
     </div>

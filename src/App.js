@@ -11,6 +11,8 @@ import Film from "./pages/Film";
 import Film2 from "./pages/Film2";
 import Search from "./pages/Search";
 import User from "./pages/User";
+import Offers from "./pages/Offers";
+import Support from "./pages/Support";
 
 import "./scss/app.scss";
 
@@ -27,6 +29,8 @@ function App() {
           <Route path={"/film"} element={<Film />} />
           <Route path={"/film2"} element={<Film2 />} />
           <Route path={"/user"} element={<User />} />
+          <Route path={"/offers"} element={<Offers />} />
+          <Route path={"/support"} element={<Support />} />
         </Route>
       </Routes>
 
