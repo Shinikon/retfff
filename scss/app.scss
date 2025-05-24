@@ -314,12 +314,13 @@ li {
 }
 
 .blog {
-  margin-top: 25px;
+  // margin-top: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   &__news {
+    margin-top: 30px;
     width: 1320px;
     height: 430px;
     display: flex;
