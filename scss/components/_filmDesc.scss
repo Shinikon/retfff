@@ -1,0 +1,28 @@
+.filmDesc__item{
+    margin-top: 50px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 334px 917px;
+    gap: 11px;
+    align-items: center;
+    &_info{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        &_top{
+            display: flex;
+            
+            h3{
+                font-weight: normal;
+            }
+            
+        }
+
+        &_text{
+            h3{
+                font-weight: normal;
+
+            }
+        }
+    }
+}

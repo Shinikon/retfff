@@ -1,0 +1,62 @@
+.banner {
+  margin-top: 5px;
+  width: 100%;
+  height: 779px;
+  color: white;
+  padding-left: 60px;
+  
+
+  // display: flex;
+
+  &__title {
+    padding-top: 212px;
+    width: 359px;
+    height: 122px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  &__bottom {
+    padding-top: 142px;
+    display: flex;
+    justify-content: space-between;
+    &_desc {
+      width: 513px;
+
+      &_title {
+        font-weight: bold;
+      }
+      &_text {
+        font-weight: normal;
+      }
+
+      button {
+        margin-top: 30px;
+        width: 195px;
+        height: 50px;
+
+        background-color: black;
+
+        h3 {
+          font-weight: normal;
+          text-decoration: none;
+        }
+
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #ca529a;
+      }
+
+      button:first-of-type {
+        margin-left: 10px;
+      }
+    }
+    &_side {
+      padding-right: 100px;
+      h3 {
+        font-weight: normal;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
