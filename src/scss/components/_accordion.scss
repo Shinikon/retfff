@@ -1,0 +1,39 @@
+.accordion-title {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  justify-content: center;
+  gap: 241px;
+  margin-bottom: 30px;
+  height: 20px;
+  cursor: pointer;
+
+  &_open {
+    font-size: 60px;
+  }
+}
+
+.accordion-content {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  justify-content: center;
+  margin-left: 220px;
+  width: 963px;
+  padding: 20px;
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.new-section-title {
+  margin-left: 235px;
+  margin-bottom: 20px;
+}
+
+hr {
+  border-bottom: 1px solid #ffffff;
+  width: 963px;
+  margin-left: 220px;
+  margin-bottom: 20px;
+}

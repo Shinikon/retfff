@@ -1,0 +1,22 @@
+.news {
+  margin-top: 35px;
+  margin-left: 50px;
+  margin-right: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 417px);
+  gap: 35px;
+  &__block {
+    width: 417px;
+    height: 235px;
+    background-position: center;
+    background-repeat: no-repeat;
+    // text-align: center;
+    display: flex;
+    align-items: flex-end;
+
+    h3 {
+      font-weight: normal;
+      padding: 10px;
+    }
+  }
+}

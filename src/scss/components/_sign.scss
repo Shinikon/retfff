@@ -1,0 +1,131 @@
+.sign {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__top {
+    display: flex;
+    align-items: center;
+
+    &_btns {
+      margin-left: 36px;
+      gap: 20px;
+      display: flex;
+      align-items: center;
+      button {
+        width: 119px;
+        height: 50px;
+        background-color: #ca529a;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: 43px;
+    width: 982px;
+    h3 {
+      color: rgb(255, 255, 255, 0.7);
+    }
+    &_sub {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: end;
+      margin-right: 72px;
+      gap: 99px;
+      margin-bottom: 20px;
+    }
+
+    &_row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      height: 44px;
+      background-color: #1f1f1f;
+
+      padding-right: 80px;
+      padding-left: 20px;
+
+      div {
+        display: flex;
+        gap: 94px;
+      }
+    }
+  }
+}
+.even-row {
+  background-color: #1f1f1f;
+}
+
+.odd-row {
+  background-color: #000000;
+}
+
+.modal-content-wrapper {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  /*   align-items: center;
+  justify-content: center; */
+  width: 748px;
+  /*   height: 748px; */
+  background-color: #000000;
+}
+
+.modal-text-content {
+  padding-top: 20px;
+  padding-bottom: 58px;
+  padding-left: 34px;
+  padding-right: 34px;
+  display: flex;
+  flex-direction: column;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    input:first-of-type {
+      margin-top: 40px;
+    }
+
+    input {
+      width: 352px;
+      height: 74px;
+      border-radius: 15px;
+      color: #000000;
+      font-family: "Montserrat", sans-serif;
+
+      font-style: normal;
+      ::placeholder {
+        padding-left: 30px;
+        font-family: "Montserrat", sans-serif;
+
+        font-style: normal;
+      }
+      padding-left: 30px;
+    }
+
+    button {
+      width: 382px;
+      height: 74px;
+      background-color: #fff;
+      color: #ca529a;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 15px;
+    }
+  }
+
+  .copy {
+    padding-top: 100px;
+    display: flex;
+    width: 681px;
+    justify-content: space-between;
+    color: #fff;
+  }
+}
